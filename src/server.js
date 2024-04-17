@@ -1,8 +1,10 @@
 const express = require('express');
 const path = require('path');
+require('dotenv').config();
 
 const app = express(); // Init app express
-const port = 8080; // Port
+const port = process.env.PORT; // Port
+const hostname = process.env.HOST_NAME;
 
 // Config template engine
 app.set('views', path.join(__dirname, 'views'));
@@ -22,6 +24,6 @@ app.get('/home', (req, res) => {
 });
 
 // Run server
-app.listen(port, () => {
+app.listen(port, hostname, () => {
     console.log(`App listening on port ${port}`);
 });

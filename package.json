@@ -1,0 +1,19 @@
+{
+  "name": "firstly_api",
+  "version": "1.0.0",
+  "description": "firstly api nodejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "api"
+  ],
+  "author": "trungem",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.19.2"
+  }
+}

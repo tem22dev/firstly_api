@@ -1,16 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.send(`<h1>Hello world</h1>`)
-});
+const { homeController, userController } = require('../controllers/homeController');
 
-router.get('/user', (req, res) => {
-    res.json({id: 1, name: 'Trung Em'});
-});
-
-router.get('/home', (req, res) => {
-    res.render('home.ejs'); // Tạo view động
-});
+router.get('/', homeController);
+router.get('/user', userController);
 
 module.exports = router;

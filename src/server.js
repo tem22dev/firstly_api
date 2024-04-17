@@ -12,7 +12,7 @@ const hostname = process.env.HOST_NAME;
 configViewEngine(app);
 
 // Init Routes
-app.use('/test', router)
+app.use('/', router)
 
 // Run server
 app.listen(port, hostname, () => {

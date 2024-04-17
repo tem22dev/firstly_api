@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/user', (req, res) => {
-    res.json({id: 1, name: 'Trung Em', email: 'bakhia123@gmail.com'});
+    res.json({id: 1, name: 'Trung Em'});
 });
 
 app.get('/home', (req, res) => {
